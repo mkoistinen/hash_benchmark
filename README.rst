@@ -89,7 +89,7 @@ brute-force attacks.
 If Argon2 is right for your project, it is suggested that the
 parallelism parameter should be set to 2X the number of CPUs in your
 system. The memory_cost should be adapted to your environment. The
-default value is 512K bytes, which is reasonably small and should be
+default value is 1,536K bytes, which is reasonably small and should be
 a safe value for almost any environment. A higher memory_cost value may
 provide even better resilience against GPUs. The time_cost remains to
 be set according to how long your project is willing to spend verifying

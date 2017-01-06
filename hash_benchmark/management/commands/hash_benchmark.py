@@ -20,7 +20,7 @@ from django.core.management.base import BaseCommand
 
 
 def custom_encode(password, salt, algorithm='pbkdf2_sha256', iterations=100000,
-                  time_cost=2, memory_cost=512, parallelism=2):
+                  time_cost=2, memory_cost=1536, parallelism=2):
     """
     Hashes a password with the desired specifications.
     """
@@ -74,7 +74,7 @@ class Command(BaseCommand):
             help='number of times to average (Argon2 only)')
         parser.add_argument(
             '-m', '--memory_cost', action='store', type=int,
-            required=False, default=512,
+            required=False, default=1536,
             help='number of times to average (Argon2 only)')
         parser.add_argument(
             '-p', '--parallelism', action='store', type=int,
