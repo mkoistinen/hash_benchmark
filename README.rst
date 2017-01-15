@@ -30,7 +30,7 @@ and take a note of the performance: ::
 
     # Tests hashing performance of your installations pbkdf2_sha256
     # algorithm with 100,000 iterations
-    > python manage.py hash_password -i 100000
+    > python manage.py hash_benchmark -i 100000
 
     Python: 2.7.10 (default, Jul 13 2015, 12:05:58) 
     [GCC 4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)]
